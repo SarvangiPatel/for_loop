@@ -4,16 +4,26 @@
 
 
 
-let a = 13;
+let n = 15;
 
-for(i = a; i<=a; i++){
-    if(a%i == 0){
-        
-        console.log("not a prime num")
+let count = 0;
+
+let j ;
+
+for(j=1; j<=n; j++)
+{
+    if(n%j==0)
+    {
+        count++;
     }
-    else{
-        console.log("prime num")
-    }
+}
+if(count<=2)
+{
+    console.log("Prime number",n);
+}
+else
+{
+    console.log("not a number",n);
 }
 
 
